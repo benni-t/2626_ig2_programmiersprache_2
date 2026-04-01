@@ -22,12 +22,12 @@ Hier findet ihr alle Materialien, Beispiele und Aufgaben aus dem Unterricht.
 
 1. **Repository klonen**
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/benni-t/2626_ig2_programmiersprache_2
    ```
 
 2. **Aktuelle Version holen** (vor jeder Einheit empfohlen)
    ```bash
-   git pull
+   git pull, bzw. Pull in VSCode verwenden.
    ```
 
 3. Die Beispiele könnt ihr direkt im Browser öffnen — einfach die `index.html` im jeweiligen Ordner doppelklicken oder mit einem Live-Server (z. B. VS Code Extension) starten.
