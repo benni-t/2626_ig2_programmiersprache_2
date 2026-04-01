@@ -1,0 +1,32 @@
+/* Tag Selektor */
+div {
+  background-color: lightblue; /* Alle divs bekommen einen blauen Hintergrund */
+}
+
+/* Klassen Selektor */
+.box {
+  background-color: lightgreen; /* Alle Elemente mit der Klasse "box" bekommen grünen Hintergrund */
+  padding: 20px;
+}
+
+/* ID Selektor (höhere Gewichtung als Klasse und Tag) */
+#unique {
+  background-color: lightcoral; /* Nur das Element mit der ID "unique" bekommt einen roten Hintergrund */
+  font-size: 20px;
+}
+
+/* Tag Selektor für h1 */
+h1 {
+  font-size: 16px; /* Alle h1-Überschriften haben eine Schriftgröße von 16px */
+}
+
+/* Kombinierter Selektor für h1 mit der Klasse "special" */
+h1.special {
+  font-size: 28px; /* h1 mit der Klasse "special" bekommt eine größere Schriftgröße */
+  color: darkblue; /* h1 mit der Klasse "special" wird dunkelblau */
+}
+
+/* Überschreibt die h1-Schriftgröße innerhalb der .box */
+.box h1 {
+  font-size: 24px; /* h1 in der Box bekommt eine größere Schriftgröße */
+}

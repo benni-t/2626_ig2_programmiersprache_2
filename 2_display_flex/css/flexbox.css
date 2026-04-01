@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.parent {
+  display: flex;
+  flex-direction: row;
+  background-color: #999;
+  height: 50vh;
+
+  justify-content: space-around;
+  align-items: center;
+
+  gap: 20px;
+
+  color: white;
+  /* flex-wrap: wrap; */
+}
+
+.children {
+  /* flex-grow: 1; */
+}
+
+.children:nth-child(1) {
+  /* order: 3; */
+  /* align-self: flex-start; */
+}
+
+.parent:first-child {
+  color: red;
+}
+
+.parent:last-child {
+  order: 2;
+  /* align-self: flex-start; */
+}
+
+// mediaquery between 300px and 600px: flex-direction: colum;
+@media (min-width: 300px) and (max-width: 600px){
+  .parent {
+    flex-direction: column;
+  }
+}

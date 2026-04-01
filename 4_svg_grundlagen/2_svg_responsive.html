@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SVG-Grundlagen</title>
+</head>
+
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .svg-container {
+      width: 50vw;
+    }
+
+    svg {
+      background-color: lightgray;
+    }
+  </style>
+
+  <!-- 
+    
+  ## Responsive SVG
+  Die viewBox ist das Herzstück von SVG. Sie hebt die starrre 1:1 Kopplung zwischen Pixeln und Einheiten auf und macht die Grafik responsive.
+
+  Sie definiert den internen Koordinatenraum. Wie ein Kamera-Objektiv, das bestimmt, welchen Ausschnitt der Zeichnung gezeigt wird.
+
+  Die viewBox entkoppelt die Zeichnung von der Anzeige-Größe. Sie definiert einen sichtbaren Ausschnitt in einem eigenen, abstrakten Koordinatensystem.
+    
+  Die Syntax lautet: viewBox="min-x min-y breite höhe"
+  - min-x, min-y: Wo fängt die Kamera an zu schauen? (Meistens 0 0)
+  - breite, höhe: Wie groß ist das interne Koordinatensystem?
+
+    https://wiki.selfhtml.org/wiki/Einstieg_in_SVG/Grundformen
+    https://wiki.selfhtml.org/wiki/Einstieg_in_SVG/SVG_in_responsiven_Webseiten#Viewport
+
+  -->
+  <div class="svg-container">
+    <svg viewBox="0 0 1000 1000">
+      <rect width="100" height="100" fill="violet" />
+    </svg>
+
+    <!-- <svg viewBox="0 0 100 100">
+      <rect width="100" height="100" fill="violet" />
+    </svg> -->
+
+    <!-- <svg viewBox="-500 -500 1000 1000">
+      <rect width="100" height="100" fill="violet" />
+    </svg> -->
+  </div>
+</body>
+
+</html>

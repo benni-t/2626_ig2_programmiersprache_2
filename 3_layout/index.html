@@ -1,0 +1,63 @@
+<!-- HTML5 Dokument Deklaration -->
+<!DOCTYPE html>
+<!-- Deutschsprachiges HTML Dokument -->
+<html lang="de">
+
+<!-- Head-Bereich enthält Metadaten und CSS- / JS-Imports, etc. -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Aufgabe 1 – Responsive Layout</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 
+    Flexbox: Layout
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+    https://angrytools.com/css-flex/ 
+   -->
+</head>
+
+<!-- Body-Bereich enthält den sichtbaren Inhalt der Seite -->
+
+<body>
+
+  <!-- Wrapper-Container für das gesamte Layout -->
+  <div id="wrapper">
+
+    <!-- Kopfbereich der Seite mit Hauptüberschrift -->
+    <header>
+      <h1>Aufgabe 1<span class="title"> – Responsive Layout</span></h1>
+    </header>
+
+    <!-- Hauptinhalt der Seite -->
+    <main>
+
+      <!-- Navigationsbereich für Pattern-Auswahl -->
+      <nav>
+        <h2>Patterns</h2>
+        <ul>
+          <li>Quadrate</li>
+          <li>Rechtecke</li>
+        </ul>
+      </nav>
+      
+      <!-- Container für die Musteranzeige -->
+      <div class="svg-container">
+        <!-- Bereich in dem das generierte Muster angezeigt wird -->
+        <svg viewBox="0 0 1000 1000" class="svg-canvas" shape-rendering="crispEdges"></svg>
+        <!-- <div class="svg-canvas"></div> -->
+      </div>
+
+    </main>
+
+    <!-- Fußzeile der Seite mit Copyright-Information -->
+    <footer>
+      <p>We ❤️ Code – Programmiersprachen 2</p>
+    </footer>
+
+  </div>
+
+  <!-- Einbindung der JavaScript-Datei für die Funktionalität -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

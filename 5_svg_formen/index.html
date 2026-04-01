@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SVG-Grundlagen</title>
+</head>
+
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .svg-container {
+      width: 50vw;
+      height: 50vw;
+    }
+
+    svg {
+      background-color: lightgray;
+    }
+  </style>
+
+  <!-- 
+    
+  ## Responsive SVG
+  Die viewBox ist das Herzstück von SVG. Sie hebt die starrre 1:1 Kopplung zwischen Pixeln und Einheiten auf und macht die Grafik responsive.
+
+  Sie definiert den internen Koordinatenraum. Wie ein Kamera-Objektiv, das bestimmt, welchen Ausschnitt der Zeichnung gezeigt wird.
+    
+  Die Syntax lautet: viewBox="min-x min-y breite höhe"
+  - min-x, min-y: Wo fängt die Kamera an zu schauen? (Meistens 0 0)
+  - breite, höhe: Wie groß ist das interne Koordinatensystem?
+
+    https://wiki.selfhtml.org/wiki/Einstieg_in_SVG/Grundformen
+    https://wiki.selfhtml.org/wiki/Einstieg_in_SVG/SVG_in_responsiven_Webseiten#Viewport
+
+  -->
+  <div class="svg-container">
+    <svg viewBox="0 0 1000 1000">
+      <circle cx="0" cy="0" r="50" transform="translate(100, 100)" stroke="#146152" stroke-width="4" fill="#44803F" />
+        
+      <rect x=" 0" y="0" width="200" height="100"
+        transform="translate(50, 200)"
+        fill="#FF5A33" stroke="#FFEC5C" stroke-width="4px" />
+
+      <line id="hoch" x1="0" y1="0" x2="250" y2="0" transform="translate(50, 350)" stroke="#44803F"
+        stroke-width="4" />
+
+      <polygon points="0,0 150,0 200,50 50,50" transform="translate(50, 400)" fill="#0085ff" />
+
+      <g transform="translate(50, 500)">
+        <polygon points="0,0 100,0 50,75" fill="#0085ff"></polygon>
+        <polygon points="100,0 150,75 50,75" fill="#FF5A33"></polygon>
+        <polygon points="100,0 200,0 150,75" fill="#0085ff"></polygon>
+      </g>
+      <g transform="translate(250, 500)">
+        <polygon points="0,0 100,0 50,75" fill="#0085ff"></polygon>
+        <polygon points="100,0 150,75 50,75" fill="#FF5A33"></polygon>
+        <polygon points="100,0 200,0 150,75" fill="#0085ff"></polygon>
+      </g>
+    </svg>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <title>SVG-Grundlagen</title>
+</head>
+
+<body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .svg-container {
+      width: 500pxvw;
+    }
+
+    svg {
+      background-color: lightgray;
+    }
+  </style>
+
+  <!-- 
+
+  SVG Grundlagen: 
+  Ein SVG definiert eine Zeichenfläche. Der entscheidende Unterschied in der Darstellung liegt darin, ob ein fester Rahmen oder ein relatives Koordinatensystem verwendet wird.
+    
+  1. SVG ohne viewBox (Starre Leinwand)
+  
+  Ohne das Attribut viewBox sind die internen Koordinaten fest mit der physischen Größe des Containers verknüpft.
+  Fixierung: Die Maße width und height bestimmen direkt das Gitter. Ein Punkt bei x=10 befindet sich exakt 10 Pixel vom Rand entfernt.
+
+  Fehlende Skalierung: Wird die Größe des Containers im Browser (z. B. durch CSS) verändert, skaliert der Inhalt nicht mit. Er wird entweder abgeschnitten oder es entsteht leerer Raum, da das interne Koordinatensystem starr bleibt.
+
+  -->
+  <div class="svg-container">
+    <svg width="1000" height="1000">
+      <rect width="100" height="100" fill="violet" />
+    </svg>
+  </div>
+
+</body>
+
+</html>
