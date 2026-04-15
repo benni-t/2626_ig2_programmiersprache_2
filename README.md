@@ -15,6 +15,7 @@ Hier findet ihr alle Materialien, Beispiele und Aufgaben aus dem Unterricht.
 | `4_svg_grundlagen` | SVG — Einführung |
 | `5_svg_formen` | SVG — Formen & Pfade |
 | `6_svg_aufgabe` | SVG — Aufgabe |
+| `10_svelte_grundlagen` | Svelte — Erste WebApp |
 
 ---
 
@@ -31,6 +32,17 @@ Hier findet ihr alle Materialien, Beispiele und Aufgaben aus dem Unterricht.
    ```
 
 3. Die Beispiele könnt ihr direkt im Browser öffnen — einfach die `index.html` im jeweiligen Ordner doppelklicken oder mit einem Live-Server (z. B. VS Code Extension) starten.
+
+---
+
+## Wie kann ich die Svelte-Umgebung starten?
+
+1. Ordner 10_svelte_grundlagen in VSCode öffnen, dort das VSCode-Terminal öffnen und folgenden Befehlt ausführen:
+```bash 
+npm run dev
+```
+
+--> im Browser die URL (wird beim Starten von Vite ausgegeben) öffnen (CMD + Mausklick).
 
 ---
 
