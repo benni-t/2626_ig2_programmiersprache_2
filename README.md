@@ -37,7 +37,14 @@ Hier findet ihr alle Materialien, Beispiele und Aufgaben aus dem Unterricht.
 
 ## Wie kann ich die Svelte-Umgebung starten?
 
-1. Ordner 10_svelte_grundlagen in VSCode öffnen, dort das VSCode-Terminal öffnen und folgenden Befehlt ausführen:
+1. Ordner 10_svelte_grundlagen in VSCode öffnen, dort das VSCode-Terminal öffnen und folgenden Befehlt ausführen.
+
+### Einmalig
+```bash 
+npm install
+```
+
+### Um die Umgebung zu starten
 ```bash 
 npm run dev
 ```
